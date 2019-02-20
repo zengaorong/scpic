@@ -53,8 +53,12 @@ def getfile(fileurl):
 @scpic.route('/piclist', methods=['GET', 'POST'])
 def piclist():
     file_url =  getfile(current_app.config['UPLOADED_PHOTOS_DEST'])
-    print file_url
-    # getDate(getfile(current_app.config['UPLOADED_PHOTOS_DEST'])[0])
+
+    out_list = {}
+    for key in file_url:
+        image_list = getDate(os.path.join(current_app.config['UPLOADED_PHOTOS_DEST'],key))
+        out_list[key] = image_list[0]
+
     return render_template('scpic/filelist.html',file_url=file_url)
 
 import re

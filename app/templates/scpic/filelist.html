@@ -7,7 +7,10 @@
 <body>
 
     {% for data in file_url %}
-        <div><a href="/scpic/pics/{{ data }}">{{ data }}</a></div>
+        <div>
+            <img class="img-responsive" src="{{url_for('static', filename='static/upload'+'/'+pic+'/'+data)}}">
+            <a href="/scpic/pics/{{ data }}">{{ data }}</a>
+        </div>
     {% endfor %}
 
 </body>
