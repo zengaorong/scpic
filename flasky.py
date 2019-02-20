@@ -8,4 +8,4 @@ migrate = Migrate(app, db)
 
 
 
-# app.run(host='127.0.0.1',port=8084,debug=True)
+app.run(host='127.0.0.1',port=8087,debug=True)
