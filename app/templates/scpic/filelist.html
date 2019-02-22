@@ -8,7 +8,7 @@
 
     {% for data in out_list %}
         <div>
-            <img class="img-responsive" src="{{url_for('static', filename='static/upload'+'/'+data.filename+'/'+data.img)}}",width="100" height="100">
+            <img class="img-responsive" src="{{url_for('static', filename='static/upload'+'/'+data.filename+'/'+data.img)}}",width="200" height="200">
             <a href="/scpic/pics/{{ data.filename }}">{{ data.filename }}</a>
         </div>
     {% endfor %}
