@@ -56,7 +56,7 @@ headers = {'Accept': 'image/webp,image/apng,image/*,*/*;q=0.8',
 # 107041,170116
 #shibari
 # new 196705,167076,210977,245699,136286
-down_ids = [263050,253922]
+down_ids = [42299,42297,228749,231254,223851]
 # down_ids = [259598]
 res_session = requests.session()
 def down_pics(down_ids):
